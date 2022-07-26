@@ -1,55 +1,74 @@
-header{
+*{font-family:"Comic Sans MS", cursive, sans-serif;
+    box-sizing: border-box;}
+  
+      .title-container {
+    width: 90%;
+    height: 100px;
+    margin-right: auto;
+    margin-left: auto;
     text-align: center;
-    font-size: 2em;           
-    margin: 50px;
-}
-#pk{
-    background-color: gray;
-    width: 330px;
-    height: 190px;
-    border: solid black;
-    margin: top 10px; ;
-    margin-left: 110px;
-    float: left;
-
-}
-#jh{
-    background-color: gray;
-    width: 330px;
-    height:190px ;
-    border:solid black ;
-    margin-top: 10px;
-    margin-left: 110px;
-    float: left;
-}
-#lm{
-    background-color: gray;
-    width: 330px;
-    height: 190px;
-    border: solid black;
-    margin-top: 10px;
-    margin-left: 110px;
-    float: left;
-        }
-       
-
-        @media (min-width:992px){
-            div{width: 100%;
-                height: 100%;            }
-                 #p1,#p2,#p3{
-                    width: 100px;
-                    height: 40px;
-                }
-         
-        @media(min-width:768px;) and (max-width 991px;){
-            div {width: 100%; height: 100%;}
-            #p1,#p2,#p3{width: 100px; height: 40px;}
-
-        }
-        @media(min-width: 0px;) and (max-width:767px;){
-            div{width: 75%; height: 75%;}
-            #p1,#p2,#p3{width: 100px; height: 40px;}
-        }
-
-
-        }
+    font-size: 175%;
+    }
+  
+     .menu-title{
+         width:40%;
+         float:right;
+         border: 2px solid black;
+         text-align: center;
+         font-size: 125%;
+         float:right;
+     }
+  
+     .menu{
+         background-color: #8e8e8e;
+         margin:10px;
+         border:2px solid black;
+     }
+  
+     .text{
+         margin:10px;
+         margin-top:40px;
+         clear:both;
+     }
+  
+     .row {
+      width: 90%;
+      border: 5px;
+      margin-right: auto;
+      margin-left: auto;
+      padding:5px;
+     }
+     #chicken{background-color: #cf8d8d;}
+     #beef{background-color: #b93c3b; color:white;}
+     #sushi{background-color: #e1ca8d;}
+     
+  
+  /********** Desktop **********/
+  @media (min-width: 992px) {
+    .col-lg-4 {
+      float: left;
+      background-color: white;
+      width: 33.33%;
+    }
+  }
+  
+  /********** Tablet **********/
+  @media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6, .col-md-12 {
+      float: left;
+      background-color: white;
+    }
+    .col-md-6 {
+      width: 50%;
+    }
+    .col-md-12 {
+      width: 100%;
+    }
+  }
+  
+  /********** Mobile **********/
+  @media (max-width: 767px) {.col-sm-12 {
+      float: left;
+      background-color: white;
+      width: 100%;}
+  }
